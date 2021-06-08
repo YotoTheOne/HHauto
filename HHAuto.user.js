@@ -3389,7 +3389,7 @@ var  CrushThem = function()
                 if (league_battle !== null && league_battle === "1")
                 {
                     logHHAuto("Reloading after league fight.");
-                    setTimeout(function(){location.reload();},randomInterval(3000,5000));
+                    setTimeout(function(){location.reload();},randomInterval(500,1000));
                 }
                 else
                 {
@@ -9174,11 +9174,11 @@ var start = function () {
         }
     }
 
-    if (!CollectEventData())
-    {
-        setTimeout(function(){CollectEventData();},5000);
-    }
-
+//    if (!CollectEventData())
+//    {
+//        setTimeout(function(){CollectEventData();},5000);
+//    }
+    setInterval(CollectEventData(), 5000);
 
     if (hh_nutaku)
     {
