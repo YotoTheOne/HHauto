@@ -3394,7 +3394,7 @@ var  CrushThem = function()
                 else
                 {
                     logHHAuto("Go to home after Troll fight.");
-                    setTimeout(function(){gotoPage('home');},randomInterval(2000,4000));
+                    setTimeout(function(){gotoPage('home');},randomInterval(500,1000));
                 }
                 return true;
             }
