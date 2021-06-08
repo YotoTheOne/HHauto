@@ -5305,7 +5305,8 @@ var autoLoop = function () {
     if (getPage() == "path_of_attraction" && Storage().HHAuto_Setting_PoAMaskRewards === "true") {
         modulePathOfAttractionHide();
     }
-
+    
+    CollectEventData();
 };
 
 function getLevelXp(inRarity, inLevel)
