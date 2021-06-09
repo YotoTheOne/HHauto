@@ -9173,11 +9173,11 @@ var start = function () {
         }
     }
 
-    if (!CollectEventData())
-    {
-        setTimeout(function(){CollectEventData();},5000);
-    }
-
+    //if (!CollectEventData())
+    //{
+    //    setTimeout(function(){CollectEventData();},5000);
+    //}
+    setInterval(CollectEventData, 5000);
 
     if (hh_nutaku)
     {
